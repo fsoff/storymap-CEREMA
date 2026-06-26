@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Test Storymaps & Infographies Aquaculture</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+<style>
+:root{--coral:#ef7657;--blue:#7e96cf;--navy:#4e4a86;--ink:#32304e;--muted:#8d89a8;--bg:#fbf8f6;--card:#ffffff;--ok:#2d9e6b;--danger:#c65151;--shadow:0 16px 50px rgba(78,74,134,.14);--radius:24px}
+*{box-sizing:border-box} html,body{min-height:100%;margin:0} body{font-family:'DM Sans',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:radial-gradient(circle at 12% 0%,rgba(126,150,207,.16),transparent 32%),radial-gradient(circle at 95% 8%,rgba(239,118,87,.16),transparent 28%),linear-gradient(180deg,#fff 0%,var(--bg) 100%);color:var(--ink);}
+button,input,textarea,select{font:inherit} button{cursor:pointer} .app{max-width:980px;margin:0 auto;min-height:100svh;padding:14px 14px 110px;position:relative}.topbar{position:sticky;top:0;z-index:20;margin:-14px -14px 12px;padding:12px 14px 10px;background:rgba(255,255,255,.88);backdrop-filter:blur(16px);border-bottom:1px solid rgba(78,74,134,.08)}.brand{display:flex;align-items:center;gap:10px}.mark{width:38px;height:38px;border-radius:14px;background:linear-gradient(135deg,var(--coral),var(--blue));box-shadow:0 8px 24px rgba(78,74,134,.18);position:relative;flex:0 0 auto}.mark:after{content:"";position:absolute;left:10px;right:10px;top:18px;height:3px;background:#fff;border-radius:4px;box-shadow:0 7px 0 rgba(255,255,255,.72),0 -7px 0 rgba(255,255,255,.72)}.brand h1{font-size:14px;line-height:1.12;margin:0;color:var(--navy);font-weight:700}.brand p{margin:3px 0 0;font-size:11px;color:var(--muted)}.progress{height:5px;border-radius:20px;background:rgba(78,74,134,.08);overflow:hidden;margin-top:10px}.progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--coral),var(--blue));transition:width .25s}.section{display:none;animation:rise .22s ease}.section.active{display:block}@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}.card{background:rgba(255,255,255,.96);border:1px solid rgba(126,150,207,.15);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px;margin:14px 0}.hero{padding:24px 18px 20px;overflow:hidden;position:relative}.hero:before{content:"";position:absolute;right:-48px;top:-48px;width:150px;height:150px;border-radius:50%;border:22px solid rgba(126,150,207,.12)}.eyebrow{display:inline-flex;align-items:center;gap:7px;border-radius:999px;padding:6px 10px;background:rgba(239,118,87,.09);color:var(--coral);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.04em}.title{font-size:26px;line-height:1.02;color:var(--navy);margin:14px 0 10px;font-weight:700;letter-spacing:-.03em}.lead{font-size:15px;line-height:1.55;color:#55516e;margin:0}.timer{display:flex;align-items:center;justify-content:space-between;gap:10px;background:rgba(78,74,134,.06);border:1px solid rgba(78,74,134,.08);border-radius:18px;padding:10px 12px;margin:0 0 12px}.timer .label{font-size:12px;color:var(--muted);font-weight:600}.timer .clock{font-size:19px;color:var(--navy);font-weight:700;font-variant-numeric:tabular-nums}.timer.expired{background:rgba(239,118,87,.10);border-color:rgba(239,118,87,.25)}.timer.expired .clock{color:var(--danger)}.timer-note{display:none;color:var(--danger);font-size:12px;margin:-6px 0 10px}.timer.expired+.timer-note{display:block}.section-title{font-size:22px;line-height:1.1;color:var(--navy);margin:4px 0 8px}.section-text{font-size:14px;line-height:1.55;color:#5c5874;margin:0 0 14px}.field{margin:14px 0}.field label,.legend-label{display:block;font-size:12px;letter-spacing:.02em;text-transform:uppercase;color:var(--navy);font-weight:700;margin-bottom:7px}.text-input,textarea,select{width:100%;border:1.5px solid rgba(126,150,207,.35);background:#fff;border-radius:16px;padding:13px 14px;outline:none;color:var(--ink);transition:border .15s,box-shadow .15s}textarea{min-height:92px;resize:vertical;line-height:1.45}.text-input:focus,textarea:focus,select:focus{border-color:var(--blue);box-shadow:0 0 0 4px rgba(126,150,207,.14)}.check{display:flex;align-items:flex-start;gap:10px;background:rgba(126,150,207,.08);border-radius:18px;padding:14px;border:1px solid rgba(126,150,207,.14)}.check input{margin-top:3px;transform:scale(1.18)}.check span{font-size:13px;line-height:1.45;color:#57536e}.pills{display:flex;flex-wrap:wrap;gap:8px}.pill{position:relative}.pill input{position:absolute;opacity:0}.pill span{display:block;border-radius:999px;border:1.5px solid rgba(126,150,207,.35);background:#fff;color:#5c5874;padding:10px 13px;font-size:13px;font-weight:600}.pill input:checked+span{background:var(--navy);border-color:var(--navy);color:#fff}.likert{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-top:8px}.likert input{display:none}.likert label{height:38px;display:flex;align-items:center;justify-content:center;border-radius:12px;border:1px solid rgba(126,150,207,.28);background:#fff;color:#66617e;font-weight:700;font-size:13px}.likert input:checked+label{background:var(--coral);border-color:var(--coral);color:#fff;box-shadow:0 8px 18px rgba(239,118,87,.22)}.scale-hint{display:flex;justify-content:space-between;color:#9b97b2;font-size:10px;margin-top:6px}.question-card{border-radius:20px;border:1px solid rgba(126,150,207,.14);padding:14px;margin:12px 0;background:linear-gradient(180deg,#fff,rgba(126,150,207,.04))}.qhead{display:flex;gap:10px;align-items:flex-start}.qnum{width:38px;height:38px;border-radius:14px;background:rgba(239,118,87,.10);display:flex;align-items:center;justify-content:center;color:var(--coral);font-weight:800;flex:0 0 auto}.qtitle{font-size:15px;font-weight:700;color:var(--navy);margin:0 0 4px}.qtxt{font-size:14px;line-height:1.45;color:#55516e;margin:0}.alloc{border:1px solid rgba(78,74,134,.11);border-radius:20px;padding:14px;background:#fff;margin:12px 0}.alloc-head{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}.alloc-title{font-size:14px;font-weight:800;color:var(--navy);margin:0}.alloc-detail{font-size:12px;color:#6e6a86;line-height:1.4;margin:4px 0 0}.alloc-value{font-size:20px;font-weight:800;color:var(--coral);font-variant-numeric:tabular-nums}.slider-row{display:grid;grid-template-columns:1fr 64px;gap:10px;align-items:center;margin-top:12px}input[type=range]{width:100%;accent-color:var(--coral)}.num{width:64px;text-align:center;border:1px solid rgba(126,150,207,.35);border-radius:12px;padding:8px;color:var(--navy);font-weight:800}.total-box{position:sticky;bottom:84px;z-index:10;border-radius:18px;padding:12px 14px;margin:14px 0;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border:1px solid rgba(78,74,134,.13);display:flex;align-items:center;justify-content:space-between;box-shadow:0 12px 30px rgba(78,74,134,.10)}.total-box strong{color:var(--navy)}.total-box .sum{font-size:22px;font-weight:800;color:var(--coral);font-variant-numeric:tabular-nums}.total-box.ok .sum{color:var(--ok)}.error{display:none;border-radius:16px;padding:12px 14px;background:rgba(198,81,81,.10);color:var(--danger);font-size:13px;line-height:1.45;border:1px solid rgba(198,81,81,.20);margin:12px 0}.error.show{display:block}.nav{position:fixed;left:0;right:0;bottom:0;z-index:30;background:rgba(255,255,255,.92);backdrop-filter:blur(16px);border-top:1px solid rgba(78,74,134,.10);padding:10px 14px calc(10px + env(safe-area-inset-bottom));display:flex;gap:10px;justify-content:center}.btn{border:none;border-radius:16px;padding:13px 16px;font-weight:800;min-height:48px}.btn.primary{background:var(--coral);color:#fff;box-shadow:0 10px 28px rgba(239,118,87,.22);flex:1;max-width:460px}.btn.secondary{background:rgba(78,74,134,.08);color:var(--navy)}.btn.ghost{background:transparent;color:var(--muted)}.btn:disabled{opacity:.48;cursor:not-allowed}.mini-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.mini-actions .btn{min-height:auto;padding:9px 12px;border-radius:12px;font-size:12px}.spider-grid{display:grid;grid-template-columns:1fr;gap:12px}.spider-card{border:1px solid rgba(126,150,207,.15);border-radius:22px;padding:14px;background:#fff}.spider-card h3{font-size:15px;color:var(--navy);margin:0 0 4px}.spider-card p{font-size:12px;color:var(--muted);margin:0 0 8px}.radar{width:100%;max-width:360px;margin:0 auto;display:block}.status{font-size:13px;line-height:1.45;color:#5c5874;background:rgba(126,150,207,.08);border-radius:16px;padding:12px;margin:12px 0}.status.ok{background:rgba(45,158,107,.10);color:#226f4e}.status.warn{background:rgba(239,118,87,.10);color:#91503f}.footer-note{font-size:11px;color:#aaa;text-align:center;margin-top:20px}.hidden{display:none!important}@media (min-width:760px){.app{padding:22px 22px 120px}.topbar{margin:-22px -22px 18px;padding:14px 22px}.card{padding:24px}.title{font-size:36px}.spider-grid{grid-template-columns:repeat(2,1fr)}.field-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.full{grid-column:1/-1}}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="topbar">
+    <div class="brand"><div class="mark" aria-hidden="true"></div><div><h1>Évaluation Storymaps & Infographies Aquaculture</h1><p>Atelier géré par le CEREMA et l’Iuav Université de Venise</p></div></div>
+    <div class="progress"><i id="progressBar"></i></div>
+  </div>
+  <main id="main"></main>
+</div>
+<div class="nav"><button class="btn secondary" id="prevBtn" type="button">Retour</button><button class="btn primary" id="nextBtn" type="button">Continuer</button></div>
+<script>
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwl_ZUrEzvx61YZ5YuWrxgITbxjINxvTi7xuz2X5v23-UErxnmqGte34eqZXZ5L6ldC1w/exec';
+const APP_VERSION = 'storymap-aquaculture-fr-v3-2026-07-23';
+const SECTION_TIMERS = { intro:0, identification:5*60, phase1:30*60, tlx:10*60, ficheA:20*60, ficheB:20*60, ficheC:20*60, ficheD:20*60, results:0 };
+
+const TLX = [
+  {id:'mental', dim:'Exigence mentale', q:'Dans quelle mesure la tâche a-t-elle demandé un effort mental, par exemple réfléchir, comprendre, mémoriser ou prendre des décisions ?', low:'Très faible', high:'Très élevée'},
+  {id:'physique', dim:'Exigence physique', q:'Dans quelle mesure la tâche a-t-elle demandé un effort physique, par exemple manipuler l’interface, cliquer, faire défiler ou interagir avec les éléments ?', low:'Très faible', high:'Très élevée'},
+  {id:'temporelle', dim:'Exigence temporelle', q:'Dans quelle mesure avez-vous ressenti une pression liée au temps pour accomplir la tâche ?', low:'Très faible', high:'Très élevée'},
+  {id:'performance', dim:'Performance perçue', q:'Dans quelle mesure pensez-vous avoir réussi la tâche ?', low:'Très faible réussite', high:'Très forte réussite'},
+  {id:'effort', dim:'Effort', q:'Quel niveau d’effort global avez-vous dû fournir pour accomplir la tâche ?', low:'Très faible', high:'Très élevé'},
+  {id:'frustration', dim:'Frustration', q:'Dans quelle mesure vous êtes-vous senti·e frustré·e, stressé·e, irrité·e ou découragé·e pendant la tâche ?', low:'Pas du tout', high:'Énormément'}
+];
+const PHASE1 = [
+  {id:'Q1', title:'Production nationale · emploi', text:'Identifiez le nombre d’emplois en conchyliculture en Nord Atlantique - Manche Ouest.'},
+  {id:'Q2', title:'Façade dominante en conchyliculture', text:'Quelle façade maritime concentre le plus grand volume de ventes d’huîtres au consommateur final ? Retrouvez cette information dans les outils.'},
+  {id:'Q3', title:'Labellisation en Sud-Atlantique', text:'Retrouvez le label “Huîtres Marennes Oléron” en identifiant le type d’IG.'},
+  {id:'Q4', title:'Production huîtres et moules en Méditerranée', text:'En Méditerranée, combien de tonnes d’huîtres et de moules sont produites environ ?'},
+  {id:'Q5', title:'Données manquantes / secret statistique', text:'Pour quelle façade les données de pisciculture marine sont-elles couvertes par le secret statistique, et comment chaque outil signale-t-il cette absence ?'}
+];
+const ALLOCS = {
+  ficheA:{title:'Évaluation de l’état actuel · Infographie aquaculture', label:'Fiche A', section:'État actuel – Infographie', max:100, items:[
+    {id:'A1', dim:'Pertinence des données', detail:'Les datasets (localisation, production, emploi, ventes, risques, marques, production/façade, mortalité/façade, info filière, données géographiques) sont-ils intéressants et utiles pour votre public ?'},
+    {id:'A2', dim:'Choix de visualisation', detail:'Les types de graphiques sont lisibles, captivants, efficaces et représentent correctement les données.'},
+    {id:'A3', dim:'Représentation visuelle', detail:'L’esthétique, les couleurs et la mise en page correspondent à l’identité de la filière aquacole.'},
+    {id:'A4', dim:'Interaction', detail:'Les chemins sont faciles à identifier ; l’interaction est fluide et sans friction.'}
+  ]},
+  ficheB:{title:'Évaluation de l’état actuel · Storymap', label:'Fiche B', section:'État actuel – Storymap', max:100, items:[
+    {id:'B1', dim:'Pertinence des données', detail:'Les informations présentées sont pertinentes et nouvelles pour votre public.'},
+    {id:'B2', dim:'Narration', detail:'La séquence est logique, compréhensible ; les tutoriels sont utiles.'},
+    {id:'B3', dim:'Représentation visuelle', detail:'Lisibilité, esthétique et cohérence avec la filière.'},
+    {id:'B4', dim:'Interaction', detail:'Les chemins sont faciles à identifier ; l’interaction est fluide.'}
+  ]},
+  ficheC:{title:'Priorités de développement futur · Infographies', label:'Fiche C', section:'Priorités futures – Infographies', max:100, items:[
+    {id:'C1', dim:'+ de datasets', detail:'Ajouter de nouvelles données : traçabilité, import/export, qualité de l’eau, etc.'},
+    {id:'C2', dim:'+ d’interactivité', detail:'Filtres, comparaisons, exports.'},
+    {id:'C3', dim:'+ d’efforts visuels', detail:'Refonte graphique, animations, accessibilité.'},
+    {id:'C4', dim:'Autre / maintenance', detail:'Correction de bugs, mise à jour des données existantes.'}
+  ]},
+  ficheD:{title:'Priorités de développement futur · Storymap', label:'Fiche D', section:'Priorités futures – Storymap', max:100, items:[
+    {id:'D1', dim:'+ de tutoriels', detail:'Guides intégrés, onboarding, aide contextuelle.'},
+    {id:'D2', dim:'+ de texte de contexte', detail:'Encadrés explicatifs, sources, définitions.'},
+    {id:'D3', dim:'+ d’interactivité', detail:'Nouvelles couches, filtres temporels, comparaisons.'},
+    {id:'D4', dim:'+ de liens externes', detail:'Connexions vers données officielles et publications.'}
+  ]}
+};
+const sections = ['intro','identification','phase1','tlx','ficheA','ficheB','ficheC','ficheD','results'];
+const sectionNames = {intro:'Consentement',identification:'Identification',phase1:'Exercice en autonomie',tlx:'NASA-TLX',ficheA:'Fiche A',ficheB:'Fiche B',ficheC:'Fiche C',ficheD:'Fiche D',results:'Résultats'};
+
+const state = {
+  session_id: makeSessionId(), consent:false, identifiant:'', profession:'', familiarite:null,
+  groupe_exercice:'', groupe_storymap:'', phase1:{}, tlx:{}, allocs:{}, seconds:{}, submitted:false
+};
+Object.keys(ALLOCS).forEach(k => { state.allocs[k] = {}; ALLOCS[k].items.forEach(it => state.allocs[k][it.id] = 25); });
+let current = 0, activeTimer = null, enteredAt = null, activeSection = null;
+
+function makeSessionId(){ return 'S-' + Date.now().toString(36) + '-' + Math.random().toString(36).slice(2,8).toUpperCase(); }
+function esc(s){return String(s ?? '').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));}
+function mmss(n){n=Math.max(0,Math.floor(n));return String(Math.floor(n/60)).padStart(2,'0')+':'+String(n%60).padStart(2,'0');}
+
+function render(){
+  const id = sections[current];
+  stopSectionTimer();
+  document.getElementById('main').innerHTML = renderSection(id);
+  document.getElementById('progressBar').style.width = ((current)/(sections.length-1)*100)+'%';
+  document.getElementById('prevBtn').disabled = current===0;
+  document.getElementById('nextBtn').textContent = current===sections.length-1 ? 'Actualiser les résultats' : (id==='results' ? 'Résultats' : 'Continuer');
+  bindSection(id);
+  startSectionTimer(id);
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function timerHtml(id){ const dur=SECTION_TIMERS[id]||0; if(!dur) return ''; return `<div class="timer" id="timerBox"><span class="label">Temps indicatif · ${sectionNames[id]}</span><span class="clock" id="clock">${mmss(dur)}</span></div><div class="timer-note">Temps indicatif écoulé — vous pouvez finaliser si nécessaire.</div>`; }
+function renderSection(id){
+  if(id==='intro') return `<section class="section active"><div class="card hero"><span class="eyebrow">Protocole d’évaluation</span><h2 class="title">Storymaps & infographies aquaculture</h2><p class="lead">Atelier géré par le CEREMA et l’Iuav Université de Venise.</p></div><div class="card"><h2 class="section-title">Consentement au traitement des données</h2><p class="section-text">Les réponses sont utilisées à des fins d’analyse scientifique et seront présentées uniquement sous forme agrégée. Aucun nom n’est requis : utilisez un identifiant de participant.</p><label class="check"><input type="checkbox" id="consent" ${state.consent?'checked':''}><span>J’accepte que mes réponses soient collectées et traitées par l’équipe de recherche pour l’analyse agrégée de ce test.</span></label><div class="error" id="err"></div></div></section>`;
+  if(id==='identification') return `<section class="section active">${timerHtml(id)}<div class="card"><h2 class="section-title">Identification</h2><p class="section-text">Renseignez un identifiant anonyme avant de commencer. Cet identifiant permet de relier les différentes sections sans collecter votre nom.</p><div class="field-grid"><div class="field"><label for="identifiant">Identifiant participant *</label><input class="text-input" id="identifiant" value="${esc(state.identifiant)}" placeholder="Ex. P01"></div><div class="field"><label for="profession">Profession *</label><input class="text-input" id="profession" value="${esc(state.profession)}" placeholder="Ex. chargé·e de mission, chercheur·e, technicien·ne"></div><div class="field full"><span class="legend-label">Groupe / outil principal pour l’exercice</span><div class="pills">${pill('groupe_exercice','Infographie',state.groupe_exercice)}${pill('groupe_exercice','Visualiseur / dashboard',state.groupe_exercice)}${pill('groupe_exercice','Les deux outils',state.groupe_exercice)}</div></div><div class="field full"><span class="legend-label">Storymap évaluée</span><div class="pills">${pill('groupe_storymap','Storymap grand public',state.groupe_storymap)}${pill('groupe_storymap','Storymap professionnel',state.groupe_storymap)}</div></div><div class="field full"><span class="legend-label">Familiarité avec les outils de visualisation digitale avancés *</span>${likert('familiarite', state.familiarite)}<div class="scale-hint"><span>1 = très faible</span><span>7 = très élevée</span></div></div></div><div class="error" id="err"></div></div></section>`;
+  if(id==='phase1') return `<section class="section active">${timerHtml(id)}<div class="card"><h2 class="section-title">Phase 1 · Exercice en autonomie</h2><p class="section-text">Répondez aux questions ci-dessous pendant l’exploration des outils. Les réponses attendues ne sont pas affichées dans l’interface participant.</p>${PHASE1.map((q,i)=>`<div class="question-card"><div class="qhead"><div class="qnum">${i+1}</div><div><p class="qtitle">${esc(q.title)}</p><p class="qtxt">${esc(q.text)}</p></div></div><div class="field"><label for="ans_${q.id}">Votre réponse</label><textarea id="ans_${q.id}" data-q="${q.id}" placeholder="Écrivez votre réponse ici...">${esc(state.phase1[q.id]||'')}</textarea></div></div>`).join('')}<div class="error" id="err"></div></div></section>`;
+  if(id==='tlx') return `<section class="section active">${timerHtml(id)}<div class="card"><h2 class="section-title">Questionnaire NASA-TLX</h2><p class="section-text">Indiquez votre perception de la charge de travail sur une échelle de 1 à 7.</p>${TLX.map(t=>`<div class="question-card"><p class="qtitle">${esc(t.dim)}</p><p class="qtxt">${esc(t.q)}</p>${likert('tlx_'+t.id,state.tlx[t.id])}<div class="scale-hint"><span>1 = ${esc(t.low)}</span><span>7 = ${esc(t.high)}</span></div></div>`).join('')}<div class="error" id="err"></div></div></section>`;
+  if(ALLOCS[id]) return renderAllocation(id);
+  if(id==='results') return renderResults();
+}
+function pill(name,value,selected){return `<label class="pill"><input type="radio" name="${name}" value="${esc(value)}" ${selected===value?'checked':''}><span>${esc(value)}</span></label>`}
+function likert(name,val){return `<div class="likert">${[1,2,3,4,5,6,7].map(v=>`<input id="${name}_${v}" type="radio" name="${name}" value="${v}" ${Number(val)===v?'checked':''}><label for="${name}_${v}">${v}</label>`).join('')}</div>`}
+function renderAllocation(id){const cfg=ALLOCS[id]; const sum = allocSum(id); return `<section class="section active">${timerHtml(id)}<div class="card"><span class="eyebrow">${cfg.label}</span><h2 class="section-title">${esc(cfg.title)}</h2><p class="section-text">Vous disposez de 100 points. Plus vous allouez de points à une dimension, plus vous estimez qu’elle est réussie ou prioritaire. Le total doit être exactement 100.</p>${cfg.items.map(it=>`<div class="alloc"><div class="alloc-head"><div><p class="alloc-title">${esc(it.dim)}</p><p class="alloc-detail">${esc(it.detail)}</p></div><div class="alloc-value" id="val_${id}_${it.id}">${state.allocs[id][it.id]}</div></div><div class="slider-row"><input type="range" min="0" max="100" step="1" value="${state.allocs[id][it.id]}" data-alloc="${id}" data-item="${it.id}"><input class="num" type="number" min="0" max="100" step="1" value="${state.allocs[id][it.id]}" data-alloc-num="${id}" data-item="${it.id}"></div></div>`).join('')}<div class="mini-actions"><button type="button" class="btn secondary" id="equalBtn">Répartir 25 / 25 / 25 / 25</button></div><div class="error" id="err"></div></div><div class="total-box ${sum===100?'ok':''}" id="totalBox"><strong>Total à distribuer</strong><span class="sum" id="allocSum">${sum}/100</span></div></section>`;}
+function renderResults(){return `<section class="section active"><div class="card hero"><span class="eyebrow">Restitution</span><h2 class="title">Résultats agrégés</h2><p class="lead">Envoyez les réponses puis actualisez les diagrammes radar. Les diagrammes utilisent les moyennes agrégées du Google Sheet.</p></div><div class="card"><button class="btn primary" id="submitBtn" type="button">Envoyer mes réponses</button><div class="mini-actions"><button type="button" class="btn secondary" id="refreshBtn">Actualiser les résultats agrégés</button><button type="button" class="btn ghost" id="localBtn">Afficher mon résultat local</button></div><div id="submitStatus" class="status ${state.submitted?'ok':''}">${state.submitted?'Réponses envoyées. Vous pouvez actualiser les résultats agrégés.':'Les réponses ne sont pas encore envoyées.'}</div><div class="error" id="err"></div></div><div class="spider-grid" id="spiders"></div><p class="footer-note">Les résultats sont indicatifs jusqu’à la fin de la session de collecte.</p></section>`;}
+
+function bindSection(id){
+  if(id==='intro'){ document.getElementById('consent').addEventListener('change',e=>state.consent=e.target.checked); }
+  if(id==='identification'){
+    ['identifiant','profession'].forEach(k=>document.getElementById(k).addEventListener('input',e=>state[k]=e.target.value.trim()));
+    document.querySelectorAll('input[name="groupe_exercice"]').forEach(el=>el.addEventListener('change',e=>state.groupe_exercice=e.target.value));
+    document.querySelectorAll('input[name="groupe_storymap"]').forEach(el=>el.addEventListener('change',e=>state.groupe_storymap=e.target.value));
+    document.querySelectorAll('input[name="familiarite"]').forEach(el=>el.addEventListener('change',e=>state.familiarite=Number(e.target.value)));
+  }
+  if(id==='phase1'){ document.querySelectorAll('textarea[data-q]').forEach(el=>el.addEventListener('input',e=>state.phase1[e.target.dataset.q]=e.target.value.trim())); }
+  if(id==='tlx'){ TLX.forEach(t=>document.querySelectorAll(`input[name="tlx_${t.id}"]`).forEach(el=>el.addEventListener('change',e=>state.tlx[t.id]=Number(e.target.value)))); }
+  if(ALLOCS[id]){
+    document.querySelectorAll('input[data-alloc]').forEach(el=>el.addEventListener('input',updateAllocFromInput));
+    document.querySelectorAll('input[data-alloc-num]').forEach(el=>el.addEventListener('input',updateAllocFromInput));
+    document.getElementById('equalBtn').addEventListener('click',()=>{ALLOCS[id].items.forEach(it=>state.allocs[id][it.id]=25); render();});
+  }
+  if(id==='results'){
+    document.getElementById('submitBtn').addEventListener('click',submitAnswers);
+    document.getElementById('refreshBtn').addEventListener('click',loadAggregates);
+    document.getElementById('localBtn').addEventListener('click',()=>drawLocalSpiders());
+    if(state.submitted) loadAggregates(); else drawLocalSpiders();
+  }
+}
+function updateAllocFromInput(e){ const id=e.target.dataset.alloc || e.target.dataset.allocNum; const item=e.target.dataset.item; const val=Math.max(0,Math.min(100,Number(e.target.value)||0)); state.allocs[id][item]=val; document.querySelectorAll(`[data-item="${item}"]`).forEach(inp=>{ if(inp!==e.target) inp.value=val; }); const v=document.getElementById(`val_${id}_${item}`); if(v) v.textContent=val; const sum=allocSum(id); document.getElementById('allocSum').textContent=sum+'/100'; document.getElementById('totalBox').classList.toggle('ok',sum===100); }
+function allocSum(id){return Object.values(state.allocs[id]||{}).reduce((a,b)=>a+Number(b||0),0)}
+
+function showError(msg){const el=document.getElementById('err'); if(!el)return; el.innerHTML=msg; el.classList.add('show');}
+function validate(id){
+  if(id==='intro' && !state.consent){showError('Veuillez accepter le traitement des données pour continuer.'); return false;}
+  if(id==='identification'){
+    if(!state.identifiant || !state.profession || !state.familiarite || !state.groupe_exercice || !state.groupe_storymap){showError('Veuillez compléter l’identifiant, la profession, les groupes et la familiarité.'); return false;}
+  }
+  if(id==='phase1'){
+    const missing=PHASE1.filter(q=>!state.phase1[q.id]); if(missing.length){showError('Veuillez renseigner une réponse pour chaque question.'); return false;}
+  }
+  if(id==='tlx'){
+    const missing=TLX.filter(t=>!state.tlx[t.id]); if(missing.length){showError('Veuillez répondre à toutes les dimensions NASA-TLX.'); return false;}
+  }
+  if(ALLOCS[id] && allocSum(id)!==100){showError('Le total doit être exactement 100 points avant de continuer.'); return false;}
+  return true;
+}
+
+document.getElementById('prevBtn').addEventListener('click',()=>{ if(current>0){ current--; render(); }});
+document.getElementById('nextBtn').addEventListener('click',()=>{ const id=sections[current]; if(id==='results'){ loadAggregates(); return; } if(!validate(id)) return; current++; render(); });
+
+function startSectionTimer(id){ activeSection=id; enteredAt=Date.now(); if(activeTimer)clearInterval(activeTimer); const dur=SECTION_TIMERS[id]||0; if(!dur) return; activeTimer=setInterval(()=>updateTimerDisplay(id),500); updateTimerDisplay(id); }
+function stopSectionTimer(){ if(activeSection && enteredAt){ state.seconds[activeSection]=(state.seconds[activeSection]||0)+Math.round((Date.now()-enteredAt)/1000); } if(activeTimer) clearInterval(activeTimer); activeTimer=null; enteredAt=null; activeSection=null; }
+function updateTimerDisplay(id){ const box=document.getElementById('timerBox'), clock=document.getElementById('clock'); if(!box||!clock)return; const elapsed=(state.seconds[id]||0)+Math.round((Date.now()-enteredAt)/1000); const remaining=(SECTION_TIMERS[id]||0)-elapsed; clock.textContent=mmss(remaining); box.classList.toggle('expired', remaining<=0); }
+
+function makeRows(){ stopSectionTimer(); startSectionTimer(sections[current]); const base={app_version:APP_VERSION,session_id:state.session_id,identifiant:state.identifiant,consentement:state.consent?'oui':'non',groupe_exercice:state.groupe_exercice,groupe_storymap:state.groupe_storymap,profession:state.profession,familiarite:state.familiarite,user_agent:navigator.userAgent}; const ts=()=>new Date().toISOString(); const rows=[]; function add(r){rows.push({...base,timestamp:ts(),...r});}
+  add({section_id:'identification',section_label:'Identification',question_id:'profession',question_label:'Quelle est votre profession ?',dimension:'Profession',value_text:state.profession,seconds_elapsed:state.seconds.identification||0});
+  add({section_id:'identification',section_label:'Identification',question_id:'familiarite',question_label:'Familiarité outils digitaux avancés',dimension:'Familiarité',value_numeric:state.familiarite,seconds_elapsed:state.seconds.identification||0});
+  PHASE1.forEach(q=>add({section_id:'phase1',section_label:'Exercice en autonomie',question_id:q.id,question_label:q.text,dimension:q.title,value_text:state.phase1[q.id],seconds_elapsed:state.seconds.phase1||0}));
+  TLX.forEach(t=>add({section_id:'tlx',section_label:'Questionnaire NASA-TLX',question_id:t.id,question_label:t.q,dimension:t.dim,value_numeric:state.tlx[t.id],seconds_elapsed:state.seconds.tlx||0}));
+  Object.keys(ALLOCS).forEach(sec=>{ const cfg=ALLOCS[sec]; cfg.items.forEach(it=>add({section_id:sec,section_label:cfg.section,question_id:it.id,question_label:cfg.title,dimension:it.dim,value_numeric:state.allocs[sec][it.id],item_detail:it.detail,seconds_elapsed:state.seconds[sec]||0})); });
+  return rows;
+}
+async function submitAnswers(){ const allValid=sections.slice(0,-1).every(id=>validate(id)); if(!allValid)return; const status=document.getElementById('submitStatus'); status.className='status warn'; status.textContent='Envoi en cours…'; const rows=makeRows(); if(!SCRIPT_URL || SCRIPT_URL.includes('PASTE_')){ state.submitted=false; status.className='status warn'; status.textContent='Mode local : ajoutez l’URL Google Apps Script dans SCRIPT_URL pour envoyer les réponses au Google Sheet.'; drawLocalSpiders(); return; }
+  try{ await fetch(SCRIPT_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({action:'submit',rows})}); state.submitted=true; status.className='status ok'; status.textContent='Réponses envoyées. Actualisez les résultats pour afficher les moyennes agrégées.'; setTimeout(loadAggregates,800); }
+  catch(err){ status.className='status warn'; status.textContent='Envoi non confirmé. Vérifiez l’URL Apps Script et le déploiement Web App.'; }
+}
+function jsonp(url){ return new Promise((resolve,reject)=>{ const cb='cb_'+Date.now()+'_'+Math.random().toString(36).slice(2); const s=document.createElement('script'); const sep=url.includes('?')?'&':'?'; window[cb]=(data)=>{delete window[cb]; s.remove(); resolve(data);}; s.onerror=()=>{delete window[cb]; s.remove(); reject(new Error('JSONP error'));}; s.src=url+sep+'callback='+cb; document.body.appendChild(s); setTimeout(()=>{ if(window[cb]){delete window[cb]; s.remove(); reject(new Error('timeout'));}},12000); }); }
+async function loadAggregates(){ const target=document.getElementById('spiders'); if(!target)return; if(!SCRIPT_URL || SCRIPT_URL.includes('PASTE_')){ drawLocalSpiders(); return; } target.innerHTML='<div class="status">Chargement des résultats agrégés…</div>'; try{ const data=await jsonp(SCRIPT_URL+'?action=aggregate'); drawAggregateSpiders(data); }catch(e){ target.innerHTML='<div class="status warn">Impossible de charger les résultats agrégés. Le mode local est affiché à la place.</div>'; drawLocalSpiders(true); }}
+function drawLocalSpiders(append=false){ const data={ok:true,total_participants:1,sections:{tlx:{dimensions:{}},ficheA:{dimensions:{}},ficheB:{dimensions:{}},ficheC:{dimensions:{}},ficheD:{dimensions:{}}}}; TLX.forEach(t=>data.sections.tlx.dimensions[t.dim]={avg:state.tlx[t.id]||0,count:1}); Object.keys(ALLOCS).forEach(sec=>ALLOCS[sec].items.forEach(it=>data.sections[sec].dimensions[it.dim]={avg:state.allocs[sec][it.id]||0,count:1})); drawAggregateSpiders(data, append?'Résultat local (agrégat indisponible)':'Résultat local'); }
+function drawAggregateSpiders(data, label){ const target=document.getElementById('spiders'); if(!target)return; if(!data || !data.ok){target.innerHTML='<div class="status warn">Aucun résultat disponible.</div>';return;} const n=data.total_participants||0; const cards=[]; cards.push(radarCard('Charge de travail perçue · NASA-TLX', label||`Moyenne agrégée · n=${n}`, getDims(data,'tlx',TLX.map(t=>t.dim)), 7)); Object.keys(ALLOCS).forEach(sec=>cards.push(radarCard(ALLOCS[sec].title, label||`Moyenne agrégée · n=${n}`, getDims(data,sec,ALLOCS[sec].items.map(i=>i.dim)), 100))); target.innerHTML=cards.join(''); }
+function getDims(data,sec,order){ const dims=(data.sections&&data.sections[sec]&&data.sections[sec].dimensions)||{}; return order.map(k=>({label:k,value:dims[k]?Number(dims[k].avg)||0:0})); }
+function radarCard(title,sub,dims,max){ return `<div class="spider-card"><h3>${esc(title)}</h3><p>${esc(sub)}</p>${radarSvg(dims,max)}</div>`; }
+function radarSvg(dims,max){ const W=360,H=330,cx=180,cy=165,R=105; const n=dims.length; const angles=dims.map((_,i)=>-Math.PI/2+i*2*Math.PI/n); let h=`<svg class="radar" viewBox="0 0 ${W} ${H}" role="img">`; [0.25,0.5,0.75,1].forEach(f=>{ const pts=angles.map(a=>`${cx+R*f*Math.cos(a)},${cy+R*f*Math.sin(a)}`).join(' '); h+=`<polygon points="${pts}" fill="none" stroke="rgba(78,74,134,.14)" stroke-width="1"/>`; }); angles.forEach((a,i)=>{ h+=`<line x1="${cx}" y1="${cy}" x2="${cx+R*Math.cos(a)}" y2="${cy+R*Math.sin(a)}" stroke="rgba(78,74,134,.13)"/>`; const lx=cx+(R+36)*Math.cos(a), ly=cy+(R+30)*Math.sin(a); const label=wrapLabel(dims[i].label,18); label.forEach((line,j)=>{h+=`<text x="${lx}" y="${ly+j*12-(label.length-1)*6}" text-anchor="middle" dominant-baseline="middle" font-size="10" fill="#4e4a86" font-family="DM Sans, sans-serif" font-weight="700">${esc(line)}</text>`}); }); const pts=dims.map((d,i)=>{ const r=Math.max(0,Math.min(1,d.value/max))*R; return `${cx+r*Math.cos(angles[i])},${cy+r*Math.sin(angles[i])}`;}).join(' '); h+=`<polygon points="${pts}" fill="rgba(239,118,87,.30)" stroke="#ef7657" stroke-width="3"/>`; dims.forEach((d,i)=>{ const r=Math.max(0,Math.min(1,d.value/max))*R; h+=`<circle cx="${cx+r*Math.cos(angles[i])}" cy="${cy+r*Math.sin(angles[i])}" r="4" fill="#ef7657"/><text x="${cx+(r+13)*Math.cos(angles[i])}" y="${cy+(r+13)*Math.sin(angles[i])}" text-anchor="middle" dominant-baseline="middle" font-size="11" fill="#33304e" font-family="DM Sans, sans-serif" font-weight="800">${Math.round(d.value*10)/10}</text>`; }); h+=`<text x="${cx}" y="${H-12}" text-anchor="middle" font-size="10" fill="#aaa" font-family="DM Sans, sans-serif">Max = ${max}</text></svg>`; return h; }
+function wrapLabel(s,len){ const words=String(s).split(' '); const lines=['']; words.forEach(w=>{ if((lines[lines.length-1]+' '+w).trim().length>len)lines.push(w); else lines[lines.length-1]=(lines[lines.length-1]+' '+w).trim(); }); return lines.slice(0,3); }
+
+render();
+</script>
+</body>
+</html>
